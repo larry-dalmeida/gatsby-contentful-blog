@@ -36,9 +36,16 @@
 }
 
 .content {
-  font-size: var(--text-lead);
-  font-weight: var(--semibold);
+  font-size: var(--text-prose);
   margin: 0;
+}
+
+.content a {
+  font-weight: var(--bold);
+}
+
+.content a:hover {
+  border-bottom: 1px solid var(--primary);
 }
 
 @media (min-width: 480px) {

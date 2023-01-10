@@ -4,10 +4,10 @@ import { renderRichText } from 'gatsby-source-contentful/rich-text'
 
 import * as styles from './hero.module.css'
 
-const Hero = ({ image, title, content }) => (
+const Hero = ({ image, imageAltDesc, title, content }) => (
   <div className={styles.hero}>
     {image && (
-      <GatsbyImage className={styles.image} alt={title} image={image} />
+      <GatsbyImage className={styles.image} alt={imageAltDesc} image={image} />
     )}
     <div className={styles.details}>
       <h1 className={styles.title}>{title}</h1>

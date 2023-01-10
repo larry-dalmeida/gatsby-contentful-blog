@@ -15,6 +15,7 @@ class RootIndex extends React.Component {
       <Layout location={this.props.location}>
         <Hero
           image={author.heroImage.gatsbyImage}
+          imageAltDesc={author.heroImage.description}
           title={author.name}
           content={author.shortBio}
         />
@@ -41,6 +42,7 @@ export const pageQuery = graphql`
             width: 424
             height: 212
           )
+          description
         }
         description {
           raw
@@ -62,6 +64,7 @@ export const pageQuery = graphql`
             placeholder: BLURRED
             width: 1180
           )
+          description
         }
       }
     }

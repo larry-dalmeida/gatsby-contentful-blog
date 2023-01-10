@@ -47,6 +47,7 @@ class BlogPostTemplate extends React.Component {
         />
         <Hero
           image={post.heroImage?.gatsbyImage}
+          imageAltDesc={post.heroImage.description}
           title={post.title}
           content={post.description}
         />
@@ -106,6 +107,7 @@ export const pageQuery = graphql`
       rawDate: publishDate
       heroImage {
         gatsbyImage(layout: FULL_WIDTH, placeholder: BLURRED, width: 1280)
+        description
         resize(height: 630, width: 1200) {
           src
         }
