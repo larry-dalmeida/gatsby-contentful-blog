@@ -53,7 +53,6 @@ class BlogPostTemplate extends React.Component {
         />
         <div className={styles.container}>
           <span className={styles.meta}>
-            {post.author?.name} &middot;{' '}
             <time dateTime={post.rawDate}>{post.publishDate}</time> –{' '}
             {timeToRead} minute read
           </span>
